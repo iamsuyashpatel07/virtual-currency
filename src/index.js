@@ -18,7 +18,7 @@ class NameForm extends React.Component {
     }
 
     handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.value);
+      alert('chip: ' + this.state.value);
       event.preventDefault();
   }
 
@@ -41,6 +41,7 @@ class NameForm extends React.Component {
         <input type = "text"
         value = {"$"+((this.state.value)*10) }
         /> 
+        <input type = "submit" value = "withdraw" / >
             </form>
         );
     }
