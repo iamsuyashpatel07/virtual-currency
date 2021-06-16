@@ -25,31 +25,51 @@ class NameForm extends React.Component {
     render() {
         return ( 
         <form onSubmit = { this.handleSubmit } >
-           <input className="rounded text-pink-500"  type = "submit"
+          <div class="px-12 pb-10">
+          <div class="w-full mb-2">
+            <div class="flex justify-center">
+           <input class="px-8  w-full border rounded py-2 text-gray-700 focus:outline-none items-center"  type = "submit"
         value = {"Hello World" }
         /> 
-        <input type = "submit"
+        </div>
+        </div>
+        <div class="w-full mb-2">
+            <div class="flex justify-center">
+        <input type = "submit" class="px-8  w-full border rounded py-2 text-gray-700 focus:outline-none items-center"
         value = {"ab192agjka8na71ka" }
         /> 
+        </div>
+        </div>
            <br />
-            <label >
+           <div class="w-full mb-2">
+            <div class="flex justify-center">
+        
             Chip:
-            <br />
-            <input type = "text"
+            <input type = "text" class="px-3  w-full border rounded py-2 text-gray-700 focus:outline-none items-center"
             placeholder="Chip to withdraw"
             value = { this.state.value }
             onChange = { this.handleChange }
-            /> 
-            </label> 
+            />  
+            </div>
+            </div>
             <br />
               {/* now this will show the usd*/}
+              <div class="w-full mb-2">
+            <div class="flex justify-center">
               USD:
               <br />
-         <input type = "text"
+         <input type = "text" class="px-3  w-full border rounded py-2 text-gray-700 focus:outline-none items-center"
         value = {"$"+((this.state.value)*10) }
         /> 
+        </div>
+        </div>
            <br />
-        <input type = "submit" value = "withdraw" / >
+           <div class="w-full mb-2">
+            <div class="flex justify-center">
+        <input class="px-8  w-full border rounded py-2 text-gray-700 focus:outline-none items-center" type = "submit" value = "withdraw" / >
+          </div>
+          </div>
+           </div>
             </form>
         );
     }
