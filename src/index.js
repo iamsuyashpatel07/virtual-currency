@@ -39,7 +39,7 @@ class NameForm extends React.Component {
               USD:
               <br />
         <input type = "text"
-        value = {"$"+((this.state.value)*2) }
+        value = {"$"+((this.state.value)*10) }
         /> 
             </form>
         );
