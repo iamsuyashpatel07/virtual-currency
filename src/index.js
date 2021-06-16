@@ -25,27 +25,36 @@ class NameForm extends React.Component {
     render() {
         return ( 
         <form onSubmit = { this.handleSubmit } >
+           <input className="rounded text-pink-500"  type = "submit"
+        value = {"Hello World" }
+        /> 
+        <input type = "submit"
+        value = {"ab192agjka8na71ka" }
+        /> 
+           <br />
             <label >
-            Enter Chip:
+            Chip:
             <br />
             <input type = "text"
+            placeholder="Chip to withdraw"
             value = { this.state.value }
             onChange = { this.handleChange }
             /> 
             </label> 
-            <input type = "submit" value = "Submit" / >
             <br />
               {/* now this will show the usd*/}
               USD:
               <br />
-        <input type = "text"
+         <input type = "text"
         value = {"$"+((this.state.value)*10) }
         /> 
+           <br />
         <input type = "submit" value = "withdraw" / >
             </form>
         );
     }
 }
+    
 
 ReactDOM.render( <
     NameForm / > ,
