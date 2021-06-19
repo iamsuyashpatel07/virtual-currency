@@ -28,10 +28,10 @@ class NameForm extends React.Component {
              <form onSubmit = { this.handleSubmit } className="">
               <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
                   <li class="">
-  
+                  <input type="submit" value="Hello World" className="bg-gray-500 text-black font-bold py-1 px-2  rounded-full text-center" />
                   </li>
                   <li class="">
-  
+                  <input type="submit" value="ab1me4mcn5cnx" className="bg-gray-500 text-black font-bold py-1 px-2  rounded-full text-center" />
                   </li>
                   <li class="flex">
                      
