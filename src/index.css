@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+input {
+    color: black;
+}
+
 label {
     color: gray;
 }

@@ -23,16 +23,17 @@ class NameForm extends React.Component {
 
     render() {
         return ( 
-          <div className="min-h-screen flex items-center bg-purple-500">
-          <div className="flex-1 mx-auto max-w-3xl p-10  border-2 rounded-lg  border-gray shadow-2xl  bg-black text-white shadow-2xl">
+          <div className="min-h-screen md:h-full flex items-center bg-purple-500">
+          <div className="flex-1 mx-auto max-w-3xl p-10 md:h-full  border-2 rounded-lg  border-gray shadow-2xl  bg-black text-white shadow-2xl">
              <form onSubmit = { this.handleSubmit } className="">
-              <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
+              <ul className="md:h-full grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
                   <li className="">
                    
                   </li>
-                  <li className="text-red-600 hover:text-green-700 italic">
+                  <li className="md:px-8 text-red-600 hover:text-green-700 italic">
                   <b>Withdraw Chips</b>
                   </li>
+                  
                   <li className="flex">
                       
                   </li>
@@ -50,14 +51,14 @@ class NameForm extends React.Component {
   
                   </li>
                   <li className="">
-                  <input type ="text" className="border rounded-lg  border-black "
+                  <input type ="text" className="border rounded-lg   border-black "
               placeholder="Chip to withdraw"
               value = { this.state.value }
               onChange = { this.handleChange }
               />
                   </li>
                   <li className="">
-                  <input type = "text" className="border rounded-lg  border-black "
+                  <input type = "text" className="border rounded-lg border-black "
               value = {"$"+((this.state.value)*10) }
               />
                   </li>
