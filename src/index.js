@@ -17,9 +17,11 @@ class NameForm extends React.Component {
     }
 
     handleSubmit(event) {
+        this.val= this.state+100;
       alert('chip: ' + this.state.value);
       event.preventDefault();
   }
+
 
     render() {
         return ( 
@@ -76,7 +78,8 @@ class NameForm extends React.Component {
               </ul>
               </form>
               <br />
-                  <input type="range" min="1" max="100" value="50" className="col-span-3 slider slidecontainer"></input>
+
+                  <input type="range" min="1" max="100" value={ this.state.value } onChange = { this.handleChange } className="col-span-3 slider slidecontainer"></input>
                    <br />
           </div>
       </div>
